@@ -1,0 +1,23 @@
+In this assignment, we expect you to come up with a working solution to a classification problem using a decision tree.
+
+As you know, a decision tree has rules that divide the sample set into distinct sets. These rules are basically boolean tests applied to a sample in a certain order imposed by the structure of the tree.
+
+A supervised decision tree trainer selects these rules so that they optimize the intra-cluster variance.
+
+However, in this assignment, you don't have to code a decision tree trainer. You only need to fill in a template function to get a working solution which has a success rate at least as the base level solution.
+
+We provide you with the base level solution. You can find the related compressed archive in the course page, named comp382-assignment-1-reference-solution.tar.gz
+
+You just need to replace the contents of "static int decideClass(Instance sample)" with your solution.
+
+You can access the attributes of the sample like:
+
+sample.value(int attIndex)
+
+It is not possible to give all the details of the Weka API. For other helpful functions, please refer to:
+
+http://weka.sourceforge.net/doc/
+
+The deadline is 9 March 23:55.
+
+We'll go over the reference solution and have a chance to answer your questions in this week's class hours.
