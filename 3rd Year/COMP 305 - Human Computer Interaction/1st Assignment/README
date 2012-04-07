@@ -1,0 +1,30 @@
+---++ Homework 1
+
+Prepare a Ruby program to display a simple dialog box which contains a simple button and a text above the button.
+
+* The text on the button should contain your name and surname: i.e. Mine would be "Onur Güngör".
+* The other piece of text which will placed *above* the button should read "COMP 305 HW #1" on the first line. The second line should contain your name, surname and student ID.
+
+I attach an example of this.
+
+---++ Guidelines For Installing the Required Packages
+1. install the preferred language bindings for qt. i.e. libqt4-ruby and ruby (if you don't have installed this earlier)
+2. install qt designer = qt4-designer
+
+---++ Basically
+1. Design the form in Qt Designer
+e.g. homework1.ui
+2. use rbuic4 to transform the .ui file to a class definition in Ruby.
+e.g. $ rbuic4 homework1.ui -o homework1_ui.rb
+3. preferably use another class (dashboard.rb) to derive that class and define the functions in that file.
+$ ./main.rb
+
+I attached the files generated in the classes so far. In general, you won't need to change much in main.rb, but in the coming weeks you will have to modify dashboard.rb (actually the class definition in dashboard.rb to implement the functions that will do the actual work of the program)
+
+---++ Deadline
+
+14 October 2010 23:59
+
+---++ Submission Method
+
+Just submit it using the "Homework 1" in the course page. You should include all the required files to run the application in another computer which the required packages are installed. i.e. You may assume that the test box contains the ruby and libqt4-ruby packages.
