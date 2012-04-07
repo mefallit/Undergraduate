@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10px"
+>
+
+<TextView android:id="@+id/firstnumber" android:layout_width="fill_parent" android:layout_height="50px" android:textSize="10pt" android:textStyle="bold" android:paddingLeft="10px" android:paddingRight="10px" android:text="0" android:gravity="right" android:typeface="sans" ></TextView>
+<TextView android:id="@+id/operator" android:layout_width="fill_parent" android:layout_height="50px" android:textSize="10pt" android:textStyle="bold" android:paddingLeft="10px" android:paddingRight="10px" android:gravity="right" android:typeface="sans"></TextView>
+<TextView android:id="@+id/secondnumber" android:layout_width="fill_parent" android:layout_height="50px" android:textSize="10pt" android:textStyle="bold" android:paddingLeft="10px" android:paddingRight="10px" android:gravity="right" android:typeface="sans"></TextView>
+
+<TableLayout android:layout_width="480px"  android:orientation="vertical" android:id="@+id/table" android:layout_height="400px">
+    <TableRow android:id="@+id/row1" android:orientation="horizontal" android:layout_height="90px" android:layout_width="fill_parent" android:layout_gravity="right">
+        <Button android:layout_width="90px" android:textStyle="bold" android:layout_height="90px"  android:typeface="sans" android:text="1" android:id="@+id/bir"></Button>
+        <Button android:layout_width="90px" android:textStyle="bold" android:layout_height="90px"  android:typeface="sans" android:text="2" android:id="@+id/iki"></Button>
+        <Button android:layout_width="90px" android:textStyle="bold" android:layout_height="90px"  android:typeface="sans" android:text="3" android:id="@+id/uc"></Button>
+        <Button android:layout_width="90px" android:textStyle="bold" android:layout_height="90px"  android:typeface="sans" android:text="+" android:id="@+id/arti"></Button>
+        <Button android:text="Del" android:id="@+id/delete" android:layout_width="90px" android:typeface="sans" android:textStyle="bold" android:layout_height="90px"></Button>
+    </TableRow>
+    <TableRow android:id="@+id/row2" android:orientation="horizontal" android:layout_height="90px" android:layout_width="fill_parent">
+        <Button android:id="@+id/dort" android:layout_height="90px" android:typeface="sans" android:layout_width="90px" android:text="4" android:textStyle="bold"></Button>
+        <Button android:id="@+id/bes"  android:layout_height="90px" android:typeface="sans" android:layout_width="90px" android:text="5" android:textStyle="bold"></Button>
+        <Button android:id="@+id/alti" android:layout_height="90px" android:typeface="sans" android:layout_width="90px" android:text="6" android:textStyle="bold"></Button>
+        <Button android:id="@+id/eksi" android:layout_height="90px" android:typeface="sans" android:layout_width="90px" android:text="-" android:textStyle="bold" ></Button>
+        <Button  android:layout_width="90px" android:id="@+id/clear" android:layout_height="90px" android:text="C" android:typeface="sans" android:textStyle="bold"></Button>
+    </TableRow>
+    <TableRow android:id="@+id/row3" android:orientation="horizontal" android:layout_height="90px" android:layout_width="fill_parent">
+        <Button android:id="@+id/yedi"  android:layout_height="90px" android:typeface="sans" android:layout_width="90px" android:text="7" android:textStyle="bold"></Button>
+        <Button android:id="@+id/sekiz" android:layout_height="90px" android:typeface="sans" android:layout_width="90px" android:text="8" android:textStyle="bold"></Button>
+        <Button android:id="@+id/dokuz" android:layout_height="90px" android:typeface="sans" android:layout_width="90px" android:text="9" android:textStyle="bold"></Button>
+        <Button android:id="@+id/carpi" android:layout_height="90px" android:typeface="sans" android:layout_width="90px" android:text="*" android:textStyle="bold"></Button>
+    </TableRow>
+    <TableRow android:id="@+id/row4" android:orientation="horizontal" android:layout_height="90px" android:layout_width="fill_parent" android:layout_gravity="right">
+        <Button android:id="@+id/sifir" android:layout_height="90px" android:typeface="sans" android:text="0" android:textStyle="bold" android:layout_width="90px"></Button>
+        <Button android:id="@+id/nokta" android:layout_height="90px" android:typeface="sans" android:layout_width="90px" android:text="," android:textStyle="bold"></Button>
+        <Button android:layout_width="90px" android:layout_height="90px" android:typeface="sans" android:text="=" android:id="@+id/esittir" > </Button>
+        <Button  android:layout_width="90px" android:id="@+id/bolu" android:layout_height="90px" android:text="/" android:typeface="sans" android:textStyle="bold"></Button>
+    </TableRow>
+</TableLayout>
+
+
+</LinearLayout>
