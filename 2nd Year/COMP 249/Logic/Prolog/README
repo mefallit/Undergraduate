@@ -1,0 +1,11 @@
+1. Write your own family tree as a Prolog program to the extend that you can define the predicates in question 2. The family tree should include your generation, your parents and their parents.
+
+2. Write the first-order logic sentences that correspond to the following predicates.
+
+kaynana(a,b)
+uveykardes(a,b)
+gelin(a,b)
+
+2. Add the predicates to your program as new Prolog rules.
+
+3. Test these predicates.

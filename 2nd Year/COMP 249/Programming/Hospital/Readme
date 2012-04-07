@@ -1,0 +1,6 @@
+In this project you are expected to design and implement a software for a hospital to manage patients. Your software must:
+(i)allow one to add, remove patients and doctors or edit existing records,
+(ii)provide a way to assign patients to doctors, and
+(iii)provide a way to add short text notes to patients
+You are expected to create a Java console application which persist its data between consequent runs.
+Since the problem statement is rather brief, you are expected to explain your design choices, and simplifications to the problem in the form of code comments.

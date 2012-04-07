@@ -1,0 +1,16 @@
+CHIP RAM256 {
+ 
+    IN in[16], load, address[8];
+    OUT out[16];
+ 
+    PARTS:
+    RAM64(in=in, out=out1, load=dmuxA, address=address[2..7]);
+    RAM64(in=in, out=out2, load=dmuxB, address=address[2..7]);
+    RAM64(in=in, out=out3, load=dmuxC, address=address[2..7]);
+    RAM64(in=in, out=out4, load=dmuxD, address=address[2..7]);
+   
+ 
+    DMux4Way(in=load, a=dmuxA, b=dmuxB, c=dmuxC, d=dmuxD, sel=address[0..1]);
+    Mux4Way16(sel=address[0..1], out=out, a=out1, b=out2, c=out3, d=out4);
+
+} 
